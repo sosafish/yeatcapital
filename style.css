@@ -75,23 +75,22 @@ body {
         font-size: 10px;
         opacity: 0.8;
     }
+    .post h3 {
+        text-align: start;
+    }
+    
     .post h3 a {
         text-decoration: underline;
         font-size: 25px;
         text-align: start;
     }
+    .poat h4 {
+        text-align: center;
+    }
     .post h4 a{
         text-align: center;
         color: black;
-        font-size: 10px;
+        font-size: 11px;
         opacity: 0.8;
-        text-align: center;
+        text-align: start;
     }
-
-
-
-
-
-
-
-
