@@ -1,12 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,700&family=Zen+Kurenaido&display=swap');
 
 * {
     font-family: "Zen Old Mincho";
 }
 
+@media screen and (min-width: 1201px) {
+    body {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    header {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    
+    .logo a {
+        color: black;
+        font-size: 30px;
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: solid 3px black;
+        font-family: "Josefin Sans";
+    }
+    
+    .terra {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    
+    .social  {
+        background-color: white;
+        padding-top: 30px;
+    }
+    
+    main {
+        background-color: white;
+        padding: 5px;
+        height: fit-content;
+    }
+    
+    .post {
+        width: 500px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;;
+    }
+    
+    .post a {
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .post h1 {
+        font-size: 35px;
+        text-align: start;
+    }
+    .post h2 {
+        text-align: center;
+        color: black;
+        font-size: 10px;
+        opacity: 0.8;
+    }
+    .post h3 {
+        text-align: start;
+    }
+
+    .post h3 a {
+        text-decoration: underline;
+        font-size: 25px;
+        text-align: start;
+    }
+    .poat h4 {
+        text-align: center;
+    }
+    .post h4 a{
+        text-align: center;
+        color: black;
+        font-size: 11px;
+        opacity: 0.8;
+        text-align: start;
+    }
+}
 
 
-body {
+/** TABLET **/
+@media screen and (min-width: 481px) {
+    body {
         width: 350px;
         height: 100%;
         background-color: white;
@@ -29,6 +120,7 @@ body {
         padding: 20px;
         text-decoration: none;
         text-transform: uppercase;
+        font-family: "Josefin Sans";
     }
     
     .terra {
@@ -94,3 +186,99 @@ body {
         opacity: 0.8;
         text-align: start;
     }
+}
+
+
+/** SMARTPHONE **/
+@media screen and (max-width: 480px) {
+    body {
+        width: 350px;
+        height: 100%;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    header {
+        background-color: white;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    
+    .logo a {
+        color: black;
+        font-size: 30px;
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: solid 1px black;
+        font-family: "Josefin Sans";
+    }
+    
+    .terra {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    
+    .social  {
+        background-color: white;
+        padding-top: 30px;
+    }
+    
+    main {
+        width: 340px;
+        background-color: white;
+        padding: 5px;
+        height: fit-content;
+    }
+    
+    .post {
+        width: 260px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;;
+    }
+    
+    .post a {
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .post h1 {
+        font-size: 35px;
+        text-align: start;
+    }
+    .post h2 {
+        text-align: center;
+        color: black;
+        font-size: 10px;
+        opacity: 0.8;
+    }
+    .post h3 {
+        text-align: start;
+    }
+    
+    .post h3 a {
+        text-decoration: underline;
+        font-size: 25px;
+        text-align: start;
+    }
+    .poat h4 {
+        text-align: center;
+    }
+    .post h4 a{
+        text-align: center;
+        color: black;
+        font-size: 11px;
+        opacity: 0.8;
+        text-align: start;
+    }
+}
