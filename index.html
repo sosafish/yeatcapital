@@ -1,35 +1,133 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>yeat</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <a href="index.html">Yeat.</a>
-            </div>
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="https://twitter.com/stableyeat"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="https://www.terra.money/"><button>Terra</button></a>
-        </header>
-        <body>
-            <div class="post">
-                    <a href="posttwo.html">Have you heard of 'The Venice of the Stars'?</a>
-                    <h1><a href="https://twitter.com/TheMoonMidas/status/1452097568062722048" target="_blank">OG Thread by @TheMoonMidas - Oct 24, 2021</a></h1>
-            </div>
-            <div class="post">
-                    <a href="postone.html">Mars Protocol: a financial primitive</a>
-                    <h1><a href="https://twitter.com/mars_protocol/status/1450638476236496900" target="_blank">OG Thread by @mars_protocol - Oct 20, 2021</a></h1>
-            </div>
-        </body>
-    </body>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
 
-</html> 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff3f;
+    font-family: "Montserrat";
+}
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+.logo a {
+    font-size: 80px;
+    color: rgb(82, 79, 255);
+    font-weight: bolder;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    font-weight: lighter;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(82, 79, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgb(37, 34, 255);
+}
+
+.post {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    padding-top: 10%;
+}
+.post a {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.post h1 a {
+    font-size: 10px;
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+}
+.post h2 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    padding-top: 5%;
+    text-align: left;
+}
+.post h2 a {
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    text-decoration: underline;
+}
+.postone {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+/** SMARTPHONE **/
+@media screen and (max-width: 480px) {
+    .post {
+        width: 90%;
+    }
+    button {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .logo {
+        text-align: center;
+    }
+}
