@@ -91,6 +91,10 @@ main {
     border-radius: 20px;
     margin-left: 10px;
 }
+.btns a {
+    color: white;
+    text-decoration: none;
+}
 .btns:hover {
     background-color: black;
 }
